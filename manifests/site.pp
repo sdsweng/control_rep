@@ -9,7 +9,7 @@ node 'localhost.localdomain' {
     content => "Welcome to ${fqdn} \n",
     owner   => "root",
   }
-s}
+}
 
 node 'minetest.puppet.vm' {
   include role::minecraft_server
