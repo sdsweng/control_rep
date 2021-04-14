@@ -3,4 +3,5 @@ class profile::base {
     ensure => present,
   }
   include ssh
+  include profile::ssh_server
 }
