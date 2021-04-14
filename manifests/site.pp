@@ -5,3 +5,7 @@ node default {
     owner   => "root",
   }
 }
+
+node 'localhost' {
+  include role::master_server
+}
