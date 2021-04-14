@@ -4,10 +4,10 @@ class minecraft {
   }
   file { '/opt/minecraft/server.jar':
       ensure => file,
-      source => "https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar"
+      source => 'https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar'
   }
   package {'java':
-    ensure => present',
+    ensure => present,
   }
   file {'/opt/minecraft/eula.txt':
     ensure => file,
@@ -20,6 +20,6 @@ class minecraft {
   
   service {'minecraft':
      ensure => running,
-     enable => true,'
+     enable => true,
   }
 }
